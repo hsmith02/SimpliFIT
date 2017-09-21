@@ -78,7 +78,9 @@
   },
   "scripts": {
     "start": "node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --colors --config webpack.config.js",
-    "build": "node_modules/.bin/cross-env NODE_ENV=production node_modules/.bin/webpack-dev-server --colors --config webpack.prod.config.js",
+    "build": "node_modules/.bin/cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config.js",
+    "boot-server": "sudo pm2 flush; sudo pm2 kill; sudo pm2 start server.js -n 'SimpliFIT' -i 0; sudo pm2 logs;",
+    "prod": "npm run build; npm run boot-server",
     "deploy": "gh-pages -d build"
   },
   "license": "MIT",

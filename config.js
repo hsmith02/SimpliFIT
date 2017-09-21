@@ -18,9 +18,15 @@ function _getServerIP() {
     return addresses[0];
 }
 
-var serverIP = _getServerIP();
+let serverIP = _getServerIP();
+const temp = serverIP.split('.');
+
+if (temp[0] === '192' && temp[1] === '168') {
+    serverIP = 'localhost'
+}
 
 module.exports = {
-    host: serverIP
+    host: serverIP,
+    port: 8080
 };
 
