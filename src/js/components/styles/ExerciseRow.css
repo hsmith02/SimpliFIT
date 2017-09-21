@@ -1,0 +1,57 @@
+p {
+    margin: 0;
+}
+
+.exerciseRow {
+    width: 80%;
+    margin: 10px auto 0 auto;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+@media (min-width: 400px) {
+    .exerciseRow {
+        width: 100%;
+    }
+}
+
+.exerciseRow:hover {
+    background-color: ghostwhite;
+}
+
+.exerciseAvatar {
+    display: inline-block;
+    width: 50px;
+}
+
+.exerciseDataBlock {
+    vertical-align: super;
+    display: inline-block;
+    width: calc(100% - 50px);
+}
+
+.exerciseDataBlockTitle {
+    display: inline-block;
+}
+
+.exerciseDataBlockSection {
+    display: inline-block;
+    float: right;
+}
+
+.exerciseName {
+    font-size: 16px;
+    font-weight: 500;
+    margin:0;
+}
+
+.exerciseType {
+    color: rgb(33, 33, 33);
+    font-size: 14px;
+    margin:0;
+}
+
+.avatar {
+    vertical-align: inherit !important;
+}

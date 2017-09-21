@@ -1,0 +1,13 @@
+.card {
+    width: 350px; 
+    display: inline-block; 
+    margin: 10px;
+}
+
+.cardActive {    
+    width: 350px; 
+    display: inline-block; 
+    margin: 10px;
+    background-color: powderblue;
+}
+
