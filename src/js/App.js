@@ -10,9 +10,6 @@ export default class App extends Component {
         <div className={AppStyles.container}>
           { this.props.children }
         </div>
-         <div className={AppStyles.footer}>
-             <p>&copy; Heather Smith 2017</p>
-         </div>
       </div>
     );
   }
