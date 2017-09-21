@@ -22,7 +22,7 @@
 }
 
 .footer {
-  background-color: #424242;
+  background-color: #180944;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -33,6 +33,23 @@
 }
 
 @media (max-width: 400px) {
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .workoutList {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
   .container {
     width: 100%;
     padding-left: 0;
@@ -69,6 +86,23 @@
 
   .workoutList {
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen
+and (min-width : 375px)
+and (max-width : 667px)
+and (orientation : portrait) {
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .workoutList {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -26,10 +26,14 @@ export default class ExerciseDayList extends Component {
                         return (
                             <ExerciseRow
                                 key={i}
+                                index={i}
+                                day={this.props.name.toLowerCase()}
                                 avatar={exercises[exercise.type.toLowerCase()][exercise.name.toLowerCase()]}
                                 name={exercise.name}
                                 type={exercise.type}
                                 data={data}
+                                clickHandler={this.props.clickHandler}
+                                exercises={this.props.exercises}
                             />
                         )
                     })

@@ -112,7 +112,15 @@ class Exercises extends Component {
     }
 
     this.cookies.remove('fitxworkouts');
-    this.cookies.set('fitxworkouts', workouts);
+
+    const today = new Date();
+    const nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
+
+    this.cookies.set('fitxworkouts', workouts, {
+        path: '/',
+        expires: nextweek
+    });
+
     this.props.router.push('/workouts');
   }
 

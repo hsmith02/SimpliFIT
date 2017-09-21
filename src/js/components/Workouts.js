@@ -35,25 +35,25 @@ export default class Workouts extends Component {
             <div className={AppStyles.workoutList}>
                 <Tabs index={this.state.index} onChange={this.handleTabChange} fixed>
                     <Tab label='Monday'>
-                        <ExerciseDayList name="Monday" exercises={this.workouts.monday}/>
+                        <ExerciseDayList name="Monday" exercises={this.workouts.monday} />
                     </Tab>
                     <Tab label='Tuesday'>
-                        <ExerciseDayList name="Monday" exercises={this.workouts.tuesday}/>
+                        <ExerciseDayList name="tuesday" exercises={this.workouts.tuesday} />
                     </Tab>
                     <Tab label='Wednesday'>
-                        <ExerciseDayList name="Wednesday" exercises={this.workouts.wednesday}/>
+                        <ExerciseDayList name="Wednesday" exercises={this.workouts.wednesday} />
                     </Tab>
                     <Tab label='Thursday'>
-                        <ExerciseDayList name="Thursday" exercises={this.workouts.thursday}/>
+                        <ExerciseDayList name="Thursday" exercises={this.workouts.thursday} />
                     </Tab>
                     <Tab label='Friday'>
-                        <ExerciseDayList name="Friday" exercises={this.workouts.friday}/>
+                        <ExerciseDayList name="Friday" exercises={this.workouts.friday} />
                     </Tab>
                     <Tab label='Saturday'>
-                        <ExerciseDayList name="Saturday" exercises={this.workouts.saturday}/>
+                        <ExerciseDayList name="Saturday" exercises={this.workouts.saturday} />
                     </Tab>
                     <Tab label='Sunday'>
-                        <ExerciseDayList name="Sunday" exercises={this.workouts.sunday}/>
+                        <ExerciseDayList name="Sunday" exercises={this.workouts.sunday} />
                     </Tab>
                 </Tabs>
             </div>
